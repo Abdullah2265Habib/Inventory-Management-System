@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Product</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M3 7v10a1 1 0 001 1h16a1 1 0 001-1V7M3 7V6a1 1 0 011-1h16a1 1 0 011 1v1m0 0H2"></path>
+                </svg>
+                Inventory Pro
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="create_product.html" class="nav-link">Add Product</a>
+                <a href="get_products.html" class="nav-link">Products</a>
+                <a href="update_product.html" class="nav-link active">Update</a>
+                <a href="delete_product.html" class="nav-link">Remove</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Update Product</h1>
+        <p>Modify product information</p>
+    </div>
+
+    <div class="container">
+        <div class="form-container">
+            <form id="updateForm" class="form">
+                <div class="form-group">
+                    <label for="product_id" class="form-label">Product ID *</label>
+                    <input type="number" id="product_id" class="form-input" placeholder="Enter product ID" required>
+                    <small>Enter the ID of the product you want to update</small>
+                </div>
+
+                <hr class="form-divider">
+
+                <div class="form-group">
+                    <label for="product_name" class="form-label">Product Name</label>
+                    <input type="text" id="product_name" class="form-input" placeholder="Leave blank to keep unchanged">
+                </div>
+
+                <div class="form-group">
+                    <label for="category" class="form-label">Category</label>
+                    <input type="text" id="category" class="form-input" placeholder="Leave blank to keep unchanged">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="price" class="form-label">Price</label>
+                        <div class="input-prefix">
+                            <span>$</span>
+                            <input type="number" id="price" class="form-input" placeholder="Leave blank to keep unchanged" step="0.01">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quantity" class="form-label">Quantity</label>
+                        <input type="number" id="quantity" class="form-input" placeholder="Leave blank to keep unchanged">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Update Product</button>
+            </form>
+
+            <div id="message" class="message"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Inventory Pro. All rights reserved.</p>
+    </footer>
+
+    <script src="js/update_product.js"></script>
+</body>
+
+</html>
