@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Authentication</title>
+  <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+  <link rel="stylesheet" href="css/authentication.css">
+
+</head>
+
+<body>
+  <form onsubmit="return false;">
+    <label for="password">Password</label>
+    <input id="password" type="password" pattern="password123" placeholder="Enter your password" required="required"
+      title="Wasn't your password &quot;password123&quot;? " />
+    <input id="login" type="checkbox" />
+    <a href="home.html" class="login-button">Enter</a>
+    <div class="padlock">
+      <div class="padlock__hook">
+        <div class="padlock__hook-body"></div>
+        <div class="padlock__hook-body"></div>
+      </div>
+      <div class="padlock__body">
+        <div class="padlock__face">
+          <div class="padlock__eye padlock__eye--left"></div>
+          <div class="padlock__eye padlock__eye--right"></div>
+          <div class="padlock__mouth padlock__mouth--one"></div>
+          <div class="padlock__mouth padlock__mouth--two"></div>
+          <div class="padlock__mouth padlock__mouth--three"></div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <script src="js/authentication.js"></script>
+
+</body>
+
+</html>
